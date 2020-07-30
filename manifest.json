@@ -1,0 +1,24 @@
+  {
+    "name": "ReducingDesire",
+    "version": "1.0",
+    "description": "Intervention for impulse buying",
+    "manifest_version": 2,
+    "browser_action": {
+      "default_icon": "icon.png",
+      "default_popup": "popup.html"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["jquery-3.5.1.js","content.js"]
+      }
+    ],
+    "web_accessible_resources": ["popup.html", "*.js", "*.txt"],
+    "permissions": [
+      "activeTab",
+      "storage",
+      "http://*/*", "https://*/*",
+      "file://*",
+      "declarativeContent"
+    ]
+  }

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Salient Cost</title>
+    <style>
+           body {
+                width:800px;
+                height:400px;
+            }
+    </style>
+
+    <script src="jquery-3.5.1.js"></script>
+    <script src="bootstrap-4.3.1-dist/js/popper.js"></script>
+    <script src="bootstrap-4.3.1-dist/js/popper.min.js"></script>
+    <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+</head>
+<body>
+ <div class="container" id="introduction">
+        <div class="jumbotron" >
+            <div id="desireControl">
+                <p class="lead">다음 질문에 답해주십시오.</p><br>
+                Q1. 이 물건에 대한 부정적 리뷰를 찾아보고, 그 내용을 적어주세요.<br>
+                <textarea id="desire-ans1" rows="2" cols="80"></textarea> <br><br>
+                Q2. 스스로 생각했을 때, 이 물건의 예상되는 단점을 적어주세요. <br>
+                <textarea id="desire-ans2" rows="2" cols="80"></textarea> <br><br>
+                <div class="text-right"> <button type="button" class="btn btn-warning" id="d-quit">Quit to Buy</button>
+                <button type="button" class="btn btn-info" id="d-done"> Next </button></div><br>
+            </div>
+
+
+            <div id="finish" style="display:none">
+                <p class="lead">모든 Intervention 을 체험해 보았습니다. <br> 아래 버튼을 누르고 실험페이지로 돌아가 task를 계속해서 진행해주십시오.</p>
+                <button type="button" class="btn btn-info" id="task-done"> Finish </button></div><br>
+            <input type="text" id="dp_order" style="display:none"/>
+            </div>
+        </div>
+ </div>
+
+</body>
+        <script src="popup.js"></script>
+</html>
